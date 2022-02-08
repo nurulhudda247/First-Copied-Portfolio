@@ -1,0 +1,467 @@
+@import url('ttps://fonts.googleapis.com/css?family=Poppins:200:300:400:500:600:700:800:900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+section
+{
+    padding: 100px;
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn
+{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: rgb(2, 137, 248);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px egba(0,0,0,0.1);
+}
+header .logo
+{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx
+{
+    padding-right: 30px;
+}
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50
+{
+    min-width: 50%;
+}
+img
+{
+    max-width: 100%;
+}
+.services
+{
+    background: #111;
+}
+.heading.white
+{
+    color: #fff;
+}
+.services .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx
+{
+    padding: 40px 20px;
+    background:  #808080;
+    color: #fff;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .servicesBx:hover
+{
+    background: #2196f3;
+}
+.services .content .servicesBx img
+{
+    
+    filter: invert(1);
+}
+.services .content .servicesBx h2
+{
+    font-size: 20px;
+    font-weight: 600px;
+}
+.formBx
+{
+    min-width: 60%;
+}
+.formBx form
+{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    resize: none;
+}
+.formBx form textarea
+{
+    min-height: 200px;
+
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+    color: #222;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo
+{
+    min-width: 40%;
+}
+.contactInfoBx
+{
+    position: relative;
+}
+.contactInfoBx .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon
+{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #222;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3
+{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+.copyright
+{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 50px;
+    }
+    .btn
+    {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2
+    {
+        font-size: 24px;
+    }
+    .contentBx h3
+    {
+        font-size: 20px;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .w50
+    {
+        margin-bottom: 20px;
+    }
+    .contactInfo
+    {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 20px;
+    }
+    .banner
+    {
+        padding: 150px 20px 100px;
+    }
+    section
+    {
+        padding: 100px 20px;
+    }
+}
+
+}
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+    background-color: #222;
+}
+
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 5px;
+}
+
+ul li a
+{
+    position: relative;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+ul li a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#6666ff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+ul li a:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+ul li a span
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: whitesmoke;
+    font-size: 20px; 
+}
+
+ul li a:hover span:nth-child(1)
+{
+    transform: translateY(-100%);
+}
+
+ul li a:hover span:nth-child(2)
+{
+    transform: translateY(-100%);
+}
+
+
+.wrapper .button
+{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    justify-content: center;
+}
+.wrapper .button:hover
+{
+    width: 200px;
+}
+.wrapper .button .icon
+{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon
+{
+    background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon
+{
+    background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon
+{
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon
+{
+    background: #00AFF0;
+}
+.wrapper .button .icon i
+{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i
+{
+    color: #fff;
+}
+.wrapper .button span
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span
+{
+    color: #4267B2;
+}
+.wrapper .button:nth-child(2) span
+{
+    color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span
+{
+    color: #E1306C;
+}
+.wrapper .button:nth-child(4) span
+{
+    color: #00AFF0;
+}
